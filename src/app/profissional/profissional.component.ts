@@ -24,6 +24,8 @@ export class ProfissionalComponent implements OnInit {
     });
   }
 
+ 
+
   detalhesProfissional(id:number){
     this.router.navigate(['detalhes-profissional', id]);
   }

@@ -1,1 +1,27 @@
-<p>atualizar-estabelecimento works!</p>
+<div class="col-md-8 offset-md-3">
+    <h3>Atualizar Estabelecimento</h3>
+    <form (ngSubmit)="onSubmit()">
+    
+        <div class="form-group">
+            <label>Nome</label>
+            <input type="text" class="form-control" id="nome"
+                [(ngModel)] = "estabelecimento.nome" name="nome">
+        </div>
+    
+        <div class="form-group">
+            <label>Endereço</label>
+            <input type="text" class="form-control" id="endereco"
+                [(ngModel)] = "estabelecimento.endereco" name="endereco">
+        </div>
+    
+        <div class="form-group">
+            <label>Celular</label>
+            <input type="text" class="form-control" id="telefone"
+                [(ngModel)] = "estabelecimento.telefone" name="telefone">
+        </div>
+    
+       
+    
+        <button class="btn btn-success" type="submit">Atualizar</button>
+    </form>
+    </div>
