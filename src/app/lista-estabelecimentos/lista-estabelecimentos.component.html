@@ -1,6 +1,6 @@
 <div class="container">
     <div class="card">
-        <h3 class="text-center">Lista de Estabelecimentos</h3>
+        <h3 class="text-center">Lista de Estabelecimentos <i class="fa fa-home"></i></h3>
         
         <div class="card-body ">
             <table class="table table-striped ">
@@ -23,9 +23,9 @@
                         
                         
                         <td class="d-grid gap-2 d-md-flex justify-content-md-init"> 
-                            <button (click) = "detalhesEstabelecimento(estabelecimento.id)" class="btn btn-secondary btn-md">Ver mais</button>
-                            <button (click) = "atualizarEstabelecimento(estabelecimento.id)" class="btn btn-info btn-md">Editar </button>
-                            <button (click) = "apagarEstabelecimento(estabelecimento.id)" class="btn btn-danger btn-md">Excluir</button>
+                            <button (click) = "detalhesEstabelecimento(estabelecimento.id)" class="btn btn-secondary btn-md"><i class="fa fa-search"></i>  Ver mais </button>
+                            <button (click) = "atualizarEstabelecimento(estabelecimento.id)" class="btn btn-info btn-md"> <i class="fa fa-edit"></i>  Editar</button> 
+                            <button (click) = "apagarEstabelecimento(estabelecimento.id)" class="btn btn-danger btn-md"><i class="fa fa-trash"></i>  Excluir</button>
                             
                         </td>
                     </tr>

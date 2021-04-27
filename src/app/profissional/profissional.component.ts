@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Profissional } from '../profissional';
 import { ProfissionalService } from '../profissional.service';
 
+
 @Component({
   selector: 'app-profissional',
   templateUrl: './profissional.component.html',

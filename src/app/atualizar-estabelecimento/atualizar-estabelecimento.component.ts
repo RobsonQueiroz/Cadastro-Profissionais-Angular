@@ -3,6 +3,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Estabelecimento } from '../estabelecimento';
 import { EstabelecimentoService } from '../estabelecimento.service';
 
+
+
 @Component({
   selector: 'app-atualizar-estabelecimento',
   templateUrl: './atualizar-estabelecimento.component.html',
@@ -43,5 +45,6 @@ export class AtualizarEstabelecimentoComponent implements OnInit {
   listaEstabelecimentos(){
     this.router.navigate(['/estabelecimentos']);
   }
+
 
 }

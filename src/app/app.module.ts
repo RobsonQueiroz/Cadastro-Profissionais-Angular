@@ -11,7 +11,10 @@ import { DetalhesProfissionalComponent } from './detalhes-profissional/detalhes-
 import { ListaEstabelecimentosComponent } from './lista-estabelecimentos/lista-estabelecimentos.component';
 import { AtualizarEstabelecimentoComponent } from './atualizar-estabelecimento/atualizar-estabelecimento.component';
 import { DetalhesEstabelecimentoComponent } from './detalhes-estabelecimento/detalhes-estabelecimento.component';
-import { CriarEstabelecimentoComponent } from './criar-estabelecimento/criar-estabelecimento.component'
+import { CriarEstabelecimentoComponent } from './criar-estabelecimento/criar-estabelecimento.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
 
 @NgModule({
   declarations: [
@@ -29,6 +32,8 @@ import { CriarEstabelecimentoComponent } from './criar-estabelecimento/criar-est
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    FontAwesomeModule,
     FormsModule
   ],
   providers: [],

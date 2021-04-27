@@ -1,10 +1,6 @@
-<script>
-    $( "#telefone" ).keypress(function() {
-        $(this).mask('(00) 0000-00009');
-    });
-</script>
+
 <div class="col-md-8 offset-md-3 card">
-    <h3>Adicionar Estabelecimento</h3>
+    <h3>Adicionar Estabelecimento <i class="fa fa-home"></i><i class="fa fa-plus"></i></h3>
     <form (ngSubmit)="onSubmit()" class="card-body">
     
         <div class="form-group">
@@ -22,7 +18,7 @@
         <div class="form-group">
             <label>Telefone</label>
             <input type="text" class="form-control" id="telefone"
-                [(ngModel)] = "estabelecimento.telefone" name="telefone" onkeypress="$(this).mask('(00) 0000-00009')">
+                [(ngModel)] = "estabelecimento.telefone" name="telefone" >
         </div>
     
                
