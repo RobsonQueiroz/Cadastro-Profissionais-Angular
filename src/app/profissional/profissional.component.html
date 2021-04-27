@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="card">
+        <h3 class="text-center">Relação de Profissionais</h3>
+        
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    
+                    <th>Nome</th>
+                    <th>Endereço</th>
+                    <th>Celular</th>
+                    <th>Tel. Fixo</th>
+                    <th>Função</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let profissional of profissionais">
+                        
+                        <td>{{profissional.nome}}</td>
+                        <td>{{profissional.endereco}}</td>
+                        <td>{{profissional.telCelular}}</td>
+                        <td>{{profissional.telFixo}}</td>
+                        <td>{{profissional.funcao}}</td>
+                        <td class="d-grid gap-2 d-md-flex justify-content-md-init">
+                            <button (click) = "detalhesProfissional(profissional.id)" class="btn btn-secondary">Ver mais</button>
+                            <button (click) = "atualizarProfissional(profissional.id)" class="btn btn-info">Editar</button>
+                            <button (click) = "apagarProfissional(profissional.id)" class="btn btn-danger">Excluir</button>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

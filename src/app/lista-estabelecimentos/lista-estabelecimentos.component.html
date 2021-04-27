@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+        <h3 class="text-center">Lista de Estabelecimentos</h3>
+        
+        <div class="card-body ">
+            <table class="table table-striped ">
+                <thead>
+                    
+                    <th>Nome</th>
+                    <th>Endereço</th>
+                    
+                    
+                    <th>Telefone</th>
+                    <th>Ações </th>
+                </thead>
+                <tbody>
+                    <tr *ngFor = "let estabelecimento of estabelecimentos">
+                        
+                        <td>{{estabelecimento.nome}}</td>
+                        <td>{{estabelecimento.endereco}}</td>
+                        <td>{{estabelecimento.telefone}}</td>
+
+                        
+                        
+                        <td class="d-grid gap-2 d-md-flex justify-content-md-init"> 
+                            <button (click) = "detalhesEstabelecimento(estabelecimento.id)" class="btn btn-secondary btn-md">Ver mais</button>
+                            <button (click) = "atualizarEstabelecimento(estabelecimento.id)" class="btn btn-info btn-md">Editar </button>
+                            <button (click) = "apagarEstabelecimento(estabelecimento.id)" class="btn btn-danger btn-md">Excluir</button>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
